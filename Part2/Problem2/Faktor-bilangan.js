@@ -1,18 +1,19 @@
 // faktor bilangan
 
-function faktorBilangan(number){
+function pembagian(bilangan){
 
     let result = []
 
-    for (let i = 0; i < number; i++){
-        if (number % i === 0){
-            output = push(i)
+    for(let i=0 ;i<bilangan;i++)
+    {
+        if(bilangan%i==0){
+            result.push(i)
         }
-    }
-    return result
+        else{continue}
+
+    }return result;
+
 }
 
-module.exports = faktorBilangan
-// console.log(faktorBilangan(2))
-// console.log(faktorBilangan(8))
-// console.log(faktorBilangan(10))
+module.exports = pembagian
+// console.log(pembagian(10))
